@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS DOG YEARS SAMPLE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            function years (form){
+                form.dogage.value = form.myage.value * 7
+            }
+        </script>
+    </head>
+    <body>
+        <b> FIND OUT THE EQUIVALENT OF YOUR AGE IN DOG YEARS </b>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Enter your age:</td>
+                    <td><input type="text" name="myage" size=15></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="Calculate" onclick="years(this.form)"></td>
+                </tr>
+
+                <tr>
+                    <td>Your age in dog years is:</td>
+                    <td><input type="text" name="dogage" size=15></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
