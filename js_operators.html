@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> JS OPERATORS </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>JS OPERATORS</h1>
+        <h2>Assignment Operator:</h2>
+        <p>John has <b id="assignment-operator"></b> .</p>
+
+        <h2>Increment Operator:</h2>
+        <p>40 incremented by 1 is <b id="inc-result"></b></p>
+
+        <h2>Decrement Operator:</h2>
+        <p>30 decremented by 1 is <b id="dec-result"></b></p>
+
+        <script>
+            var numhats = 30 + " " + "hats"
+            document.getElementById("assignment-operator").innerHTML = numhats;
+
+            var a = 40;
+            var b = 30;
+
+            a++;
+            b--;
+
+            document.getElementById("inc-result").innerHTML = a;
+            document.getElementById("dec-result").innerHTML = b;
+
+        </script>
+    </body>
+</html>
