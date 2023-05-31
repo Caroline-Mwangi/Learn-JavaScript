@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS DATA TYPES</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <h1>JS DATA TYPES:</h1>
+        <h2>Array:</h2>
+        <p>This is an array of fruits: <b id="arr"></b> .</p>
+
+        <h2>Obect:</h2>
+        <p>My pet's name is: <b id="pet-name"></b> .</p>
+        <p>My pet's age is: <b id="pet-age"></b> .</p>
+        <p>My pet's hobby is: <b id="pet-hobby"></b> .</p>
+
+        <!-- All object items in one staement -->
+        <p id="pet"></p>
+
+        <h2>Determining the length of a string:</h2>
+        <p>The length of this string: <b id="txt"></b> is <b id="length"></b>.</p>
+
+        <h2>Special Characters:</h2>
+        <p>This is testing a string variable with special characters:</p>
+        <b id="sp-char"></b>
+        
+        
+        <script>
+            var fruits = ["Apples", "Oranges", "Grapes"];
+            document.getElementById("arr").innerHTML = fruits;
+
+            var pet = {thename:"Max", age:"8 months", hobby:"playing and sleeping"};
+            document.getElementById("pet-name").innerHTML = pet.thename;
+            document.getElementById("pet-age").innerHTML = pet.age;
+            document.getElementById("pet-hobby").innerHTML = pet.hobby;
+
+            document.getElementById("pet").innerHTML = "My pet's name is <b>" + pet.thename + "</b>. He is <b>" + pet.age + "</b> old and he loves <b>" + pet.hobby + "</b>.";
+
+            var txt = "Hello. How are you?"
+            document.getElementById("txt").innerHTML = txt;
+            document.getElementById("length").innerHTML = txt.length;
+
+            var txt2 = "We are the best \"players\" in the country";
+            document.getElementById("sp-char").innerHTML = txt2;
+
+        </script>
+    </body>
+</html>
